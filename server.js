@@ -17,6 +17,8 @@ app.use(express.static("public"));
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://andrewmiddleton1:Gundaroo484@cluster0.ree7w.mongodb.net/budget", {
   useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
   useFindAndModify: false
 });
 
